@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\train.py", line 285, in <module>
+    main()
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\train.py", line 274, in main
+    formal_gate(base, args.approve_formal)
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\train.py", line 97, in formal_gate
+    raise RuntimeError('Formal training requires explicit user approval: --approve-formal')
+RuntimeError: Formal training requires explicit user approval: --approve-formal

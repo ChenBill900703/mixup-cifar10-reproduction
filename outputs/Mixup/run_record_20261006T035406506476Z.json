@@ -1,0 +1,43 @@
+{
+  "run_id": "bd26056a1db444439e07794cf7908f08",
+  "started_utc": "20261006T035406506476Z",
+  "method": "Mixup",
+  "mode": "COMPUTATIONAL_AI",
+  "quick_test": false,
+  "result_claim_allowed": true,
+  "status": "COMPLETE",
+  "start_epoch": 1,
+  "source_hashes": {
+    "train.py": "c46ba28a7c07ee87dc3ab037850358d50169587c4e28d0ffcfedd98acb25aeee",
+    "config.json": "3480533ecb5f40122a5ae93f53d8a9f383310fad4cfff486b3b3a1a8b9bf8bb1",
+    "models/__init__.py": "4c99a9d504e82bb99a025f66ebc9998ba152639be95d0ebdf64d8b0b83cf6721",
+    "models/official_resnet.py": "e6db68ae22955142b5921b60e3a9b04bb8001dbf1453b03d90f4d1ec16d17f12",
+    "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/data.py": "f58e8ed04192289ebaab2ee5d252bb39a7dc40cddd9197509aa2d423d196e610",
+    "utils/report.py": "dbf20a0507d4a9409e21e093bf0c4114574e8c7f1d1eb5219a876adb91b4393f",
+    "utils/state.py": "2dc23fa8f49870602b520bc9b6f19546c727285aefadd51d975ca8908c77651e",
+    "tests/test_invariants.py": "c8e3fa409f26f3691476ec08ae4fc7ad73e3b8c44ec8c8a565a503629ba46d1e",
+    "tests/validate.py": "d27a07fd5ad3cd6ec95d2b04df979e845a27932f20337f56c4ea72d0265e0e66"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "python_executable": "E:\\mixup BEYOND EMPIRICAL RISK MINIMIZATION\\mixup-reproduction\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "pytorch": "2.7.1+cu126",
+    "torchvision": "0.22.1+cu126",
+    "numpy": "2.2.6",
+    "cuda_runtime": "12.6",
+    "cudnn": 90701,
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 3070 Ti",
+    "gpu_vram_bytes": 8589410304,
+    "visible_gpu_count": 1,
+    "nvidia_smi": "Tue Oct  6 11:54:05 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 591.86                 Driver Version: 591.86         CUDA Version: 13.1     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3070 Ti   WDDM  |   00000000:01:00.0 Off |                  N/A |\n|  0%   39C    P8             17W /  310W |     246MiB /   8192MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A           17760    C+G   ...orkstation\\x64\\mksSandbox.exe      N/A      |\n+-----------------------------------------------------------------------------------------+\n",
+    "cudnn_benchmark": true,
+    "deterministic_algorithms": false,
+    "tf32_matmul": false,
+    "tf32_cudnn": false
+  },
+  "last_completed_epoch": 200,
+  "max_gpu_allocated_bytes": 2379311616
+}

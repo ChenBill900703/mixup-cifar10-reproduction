@@ -1,0 +1,11 @@
+test_atomic_failure_preserves_previous_checkpoint (__main__.Invariants.test_atomic_failure_preserves_previous_checkpoint) ... ok
+test_config_mismatch_rejected (__main__.Invariants.test_config_mismatch_rejected) ... ok
+test_model_identical_to_official_forward_backward (__main__.Invariants.test_model_identical_to_official_forward_backward) ... ok
+test_official_lr_executed_over_all_epochs (__main__.Invariants.test_official_lr_executed_over_all_epochs) ... ok
+test_rng_roundtrip (__main__.Invariants.test_rng_roundtrip) ... ok
+test_soft_label_loss_and_gradients (__main__.Invariants.test_soft_label_loss_and_gradients) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.412s
+
+OK

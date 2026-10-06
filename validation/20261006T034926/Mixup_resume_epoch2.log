@@ -1,0 +1,4 @@
+RESUME CHECKPOINT FOUND
+LAST COMPLETED EPOCH = 1
+NEXT EPOCH = 2
+Mixup | Epoch 2/2 | LR 0.1000 | Train loss 2.5163 | Test acc 13.00 | Error 87.00 | 2.3s

@@ -1,0 +1,11 @@
+{
+  "official_revision": "eaff31ab397a90fbc0a4aac71fb5311144b3608b",
+  "upstream_revision": "49b7aa97b0c12fe0d4054e670403a16b6b834ddd",
+  "hashes": {
+    "references/1710.09412v2.pdf": "d477fc9b3c5232669126d84406f17ae8261d19db8ebddfcb25ad995ca09b47e3",
+    "references/official-mixup-cifar10/train.py": "b905f973c881c584b2237335f7b1be91ad8f83357c353108b7e4d2a4ac1dc47f",
+    "references/official-mixup-cifar10/models/resnet.py": "e6db68ae22955142b5921b60e3a9b04bb8001dbf1453b03d90f4d1ec16d17f12",
+    "models/official_resnet.py": "e6db68ae22955142b5921b60e3a9b04bb8001dbf1453b03d90f4d1ec16d17f12",
+    "requirements-lock.txt": "5fb5cf84967c06048a6918542e14cc41353fe0f27e9d071206b114abbd7a2746"
+  }
+}

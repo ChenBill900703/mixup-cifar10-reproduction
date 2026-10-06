@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\train.py", line 285, in <module>
+    main()
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\train.py", line 279, in main
+    run_method(base, method, args)
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\train.py", line 208, in run_method
+    train_loss, _, train_n = epoch_pass(model, loaders['train'], c, optimizer)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\train.py", line 123, in epoch_pass
+    for x, y in batches:
+                ^^^^^^^
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 733, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 789, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\.venv\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\.venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 398, in default_collate
+    return collate(batch, collate_fn_map=default_collate_fn_map)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\.venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 212, in collate
+    collate(samples, collate_fn_map=collate_fn_map)
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\.venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 155, in collate
+    return collate_fn_map[elem_type](batch, collate_fn_map=collate_fn_map)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\.venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 272, in collate_tensor_fn
+    return torch.stack(batch, 0, out=out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: [enforce fail at alloc_cpu.cpp:116] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1572864 bytes.
+Traceback (most recent call last):
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\run_remaining.py", line 33, in <module>
+    main()
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\run_remaining.py", line 19, in main
+    subprocess.run(state['training_command'],cwd=ROOT,check=True)
+  File "C:\Users\ChenBill\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['E:\\mixup BEYOND EMPIRICAL RISK MINIMIZATION\\mixup-reproduction\\.venv\\Scripts\\python.exe', '-u', 'train.py', '--formal', '--approve-formal', '--method', 'ERM']' returned non-zero exit status 1.

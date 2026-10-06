@@ -1,0 +1,8 @@
+{
+  "last_completed_epoch": 1,
+  "next_epoch": 2,
+  "rng_digest_saved": "7675194edae9b6fb0c1040bcd247a2a93f459fedde592327ff53cd89d6f4cc37",
+  "rng_digest_restored": "7675194edae9b6fb0c1040bcd247a2a93f459fedde592327ff53cd89d6f4cc37",
+  "optimizer_restored": true,
+  "config_match": true
+}

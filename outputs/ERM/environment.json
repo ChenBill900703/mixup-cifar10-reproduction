@@ -1,0 +1,19 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "E:\\mixup BEYOND EMPIRICAL RISK MINIMIZATION\\mixup-reproduction\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "pytorch": "2.7.1+cu126",
+  "torchvision": "0.22.1+cu126",
+  "numpy": "2.2.6",
+  "cuda_runtime": "12.6",
+  "cudnn": 90701,
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 3070 Ti",
+  "gpu_vram_bytes": 8589410304,
+  "visible_gpu_count": 1,
+  "nvidia_smi": "Tue Oct  6 13:35:55 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 591.86                 Driver Version: 591.86         CUDA Version: 13.1     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3070 Ti   WDDM  |   00000000:01:00.0 Off |                  N/A |\n|  0%   40C    P8             17W /  310W |     246MiB /   8192MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A           17760    C+G   ...orkstation\\x64\\mksSandbox.exe      N/A      |\n+-----------------------------------------------------------------------------------------+\n",
+  "cudnn_benchmark": true,
+  "deterministic_algorithms": false,
+  "tf32_matmul": false,
+  "tf32_cudnn": false
+}

@@ -1,0 +1,60 @@
+{
+  "repository": "https://github.com/ChenBill900703/mixup-cifar10-reproduction",
+  "release": "v1.0.0",
+  "frozen_source_hashes": {
+    "train.py": "c46ba28a7c07ee87dc3ab037850358d50169587c4e28d0ffcfedd98acb25aeee",
+    "config.json": "3480533ecb5f40122a5ae93f53d8a9f383310fad4cfff486b3b3a1a8b9bf8bb1",
+    "models/__init__.py": "4c99a9d504e82bb99a025f66ebc9998ba152639be95d0ebdf64d8b0b83cf6721",
+    "models/official_resnet.py": "e6db68ae22955142b5921b60e3a9b04bb8001dbf1453b03d90f4d1ec16d17f12",
+    "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/data.py": "f58e8ed04192289ebaab2ee5d252bb39a7dc40cddd9197509aa2d423d196e610",
+    "utils/report.py": "dbf20a0507d4a9409e21e093bf0c4114574e8c7f1d1eb5219a876adb91b4393f",
+    "utils/state.py": "2dc23fa8f49870602b520bc9b6f19546c727285aefadd51d975ca8908c77651e",
+    "tests/test_invariants.py": "c8e3fa409f26f3691476ec08ae4fc7ad73e3b8c44ec8c8a565a503629ba46d1e",
+    "tests/validate.py": "d27a07fd5ad3cd6ec95d2b04df979e845a27932f20337f56c4ea72d0265e0e66"
+  },
+  "original_model_binaries": {
+    "outputs/ERM/final_model_state_dict.pt": {
+      "bytes": 44747945,
+      "sha256": "5f06936f6a17a8012975d0d6a5e5e0c59777ed50b0e692bd846ff5889b917c85"
+    },
+    "outputs/ERM/resume_checkpoint.pt": {
+      "bytes": 89505329,
+      "sha256": "462c2537df3b983d5bc6c06a62c87bd5f50eb4a5496a6bec0fffc8e8b2827067"
+    },
+    "outputs/Mixup/final_model_state_dict.pt": {
+      "bytes": 44747945,
+      "sha256": "659138f041dc043d27810d2b71106f36c09e9f2fb017da927c11aa983aff1fc3"
+    },
+    "outputs/Mixup/resume_checkpoint.pt": {
+      "bytes": 89504689,
+      "sha256": "f7ff6cd52c7a1e2133c24d04750b4329c5e151fa0f4501e0dfcc79072e6bf50d"
+    },
+    "outputs/quick/20261006T034926/ERM/final_model_state_dict.pt": {
+      "bytes": 44747945,
+      "sha256": "a20be797e5448781059aad9e7c9c805c405d284a3f57ab07d83ec7caa2b2de85"
+    },
+    "outputs/quick/20261006T034926/ERM/resume_checkpoint.pt": {
+      "bytes": 89480049,
+      "sha256": "7393a6040c152c01d175136d7ccd9ef55e56fee44ce9bfb21f89eada1480d9aa"
+    },
+    "outputs/quick/20261006T034926/Mixup/final_model_state_dict.pt": {
+      "bytes": 44747945,
+      "sha256": "a2407617e41f36786de646727342ace55eebe664b4556cab64bfbd12611448f1"
+    },
+    "outputs/quick/20261006T034926/Mixup/resume_checkpoint.pt": {
+      "bytes": 89479985,
+      "sha256": "0d2e6ae823aa36b3ac0115b966b159a638fa4900b10266507cae2cd6fd4c6976"
+    }
+  },
+  "distribution": "Text/figures in Git; original .pt files additionally in complete release ZIP",
+  "excluded": [
+    ".venv",
+    "CIFAR10 raw dataset",
+    "download cache",
+    ".git internals",
+    "private conversation"
+  ],
+  "independent_evaluation_status": "PASS",
+  "final_integrity_status": "COMPLETE"
+}

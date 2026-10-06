@@ -1,0 +1,10 @@
+{
+  "process_id": 24240,
+  "stdout": "E:\\mixup BEYOND EMPIRICAL RISK MINIMIZATION\\mixup-reproduction\\outputs\\ERM\\formal_20261006_133549.stdout.log",
+  "stderr": "E:\\mixup BEYOND EMPIRICAL RISK MINIMIZATION\\mixup-reproduction\\outputs\\ERM\\formal_20261006_133549.stderr.log",
+  "method": "ERM",
+  "epochs": 200,
+  "user_authorization": "User asked to finish all remaining work after Mixup",
+  "started": "2026-10-06T13:35:49.2317886+08:00",
+  "post_training": "finalize_results.py verifies both checkpoints and generates comparison and gap analysis"
+}

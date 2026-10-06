@@ -1,0 +1,9 @@
+{
+  "process_id": 12072,
+  "stdout": "E:\\mixup BEYOND EMPIRICAL RISK MINIMIZATION\\mixup-reproduction\\outputs\\Mixup\\formal_20261006_115402.stdout.log",
+  "stderr": "E:\\mixup BEYOND EMPIRICAL RISK MINIMIZATION\\mixup-reproduction\\outputs\\Mixup\\formal_20261006_115402.stderr.log",
+  "method": "Mixup",
+  "epochs": 200,
+  "user_authorization": "User requested direct execution after memory discussion; only truthful results",
+  "started": "2026-10-06T11:54:02.0579451+08:00"
+}

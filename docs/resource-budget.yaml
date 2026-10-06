@@ -1,0 +1,51 @@
+schema_version: "1.0"
+contract_version: "2.0"
+budget_id: local-preflight
+experiment_plan_id: mixup-cifar10-preflight
+status: AUTHORIZED
+hardware_evidence:
+  discovery_source: USER_REPORTED
+  evidence_locator: User pasted request section 5
+  read_only_command: nvidia-smi
+  command_output_locators: [validation/environment_initial.json]
+  confirmation_status: USER_CONFIRMED
+  confirmation_locator: User directly identified local RTX3070Ti 8GB Windows target and authorized quick tests
+estimated_demand:
+  device_class: NVIDIA RTX3070Ti
+  device_count_or_range: 1
+  memory_or_capacity_range: To be observed during quick tests
+  compute_quantity_range: Two capped epochs per method plus bounded verification
+  wall_clock_range: null
+  storage_working_set_range: 12-20 GB environment and staging estimate
+  transfer_range: About 3 GB packages plus 163 MB data
+  checkpoint_and_log_range: About 90 MB per checkpoint plus atomic temporary copy
+  personnel_time_range: null
+  sample_or_material_range: null
+  monetary_range: No paid resources
+  assumptions: [Full epoch throughput is not inferred from capped tests]
+verified_available:
+  device_class: User-reported NVIDIA RTX3070Ti
+  quantity: 1
+  memory_or_capacity: User-reported 8GB GPU and 32GB RAM
+  storage: User-reported SSD
+  availability_window: null
+  quota_or_access_limits: [local only]
+  evidence_locators: [user request, validation/environment_initial.json]
+authorized_allocation:
+  authorized: true
+  approver_role: User
+  resource_ceiling: Setup and capped quick validation only
+  monetary_ceiling: 0 paid compute
+  time_ceiling: No formal 200-epoch run
+  material_ceiling: null
+  stopping_triggers: [CUDA unavailable, config mismatch, failed tests, user stop]
+  authorization_locator: User final instruction
+pilot_and_scale:
+  smoke_test_required: true
+  smoke_test_result_claim_allowed: false
+  pilot_required: true
+  scale_gate: PENDING_USER_FORMAL_APPROVAL
+  retry_reserve: Bounded repairs for engineering defects only
+  optional_work_to_drop_first: []
+unknowns: [formal wall time, historical environment]
+fallback_options: [retain code and exact failed logs; do not start formal run]

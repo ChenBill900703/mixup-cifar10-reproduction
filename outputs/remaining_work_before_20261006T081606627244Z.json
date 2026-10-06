@@ -1,0 +1,16 @@
+{
+  "status": "FAILED",
+  "started_utc": "2026-10-06T05:35:52.163563+00:00",
+  "authorization": "User asked to finish the remaining work after Mixup completes",
+  "training_command": [
+    "E:\\mixup BEYOND EMPIRICAL RISK MINIMIZATION\\mixup-reproduction\\.venv\\Scripts\\python.exe",
+    "-u",
+    "train.py",
+    "--formal",
+    "--approve-formal",
+    "--method",
+    "ERM"
+  ],
+  "error": "CalledProcessError(1, ['E:\\\\mixup BEYOND EMPIRICAL RISK MINIMIZATION\\\\mixup-reproduction\\\\.venv\\\\Scripts\\\\python.exe', '-u', 'train.py', '--formal', '--approve-formal', '--method', 'ERM'])",
+  "updated_utc": "2026-10-06T06:46:20.723052+00:00"
+}

@@ -1,0 +1,70 @@
+schema_version: "1.0"
+contract_version: "2.0"
+plan_id: mixup-cifar10-preflight
+plan_version: "1"
+status: AUTHORIZED
+experiment_mode: COMPUTATIONAL_AI
+secondary_methods: []
+research_frame:
+  research_question: Can the official CIFAR10 training procedure be faithfully ported with reliable epoch resume?
+  hypothesis_or_objective: Audit sources and validate execution before any formal experiment
+  target_claim: Engineering readiness only at this stage
+  falsification_or_decision_rule: Any required failing check blocks formal execution
+units_and_scope:
+  experimental_or_observational_unit: One training run per method
+  analysis_unit: Epoch-200 full-test classification error for later formal runs
+  replicate_hierarchy: [one precommitted seed per method]
+  population_or_system: Official CIFAR10 and official PreActBlock ResNet18
+  inclusion_rules: [all official train and test files passing integrity checks]
+  exclusion_rules: []
+  stopping_rule: Preflight ends after two capped epochs per method and resume verification
+outcomes:
+  primary_outcome: Formal epoch-200 test error is NOT_EXECUTED
+  primary_measurement_rule: 100 minus accuracy across all 10000 test images
+  secondary_outcomes: [best test error is diagnostic only]
+  uncertainty_plan: No multi-seed uncertainty claim from one run
+  success_criteria:
+    - CUDA forward backward succeeds
+    - Official model and loss and LR semantics match
+    - ERM and Mixup resume in a separate process from completed epoch 1 to epoch 2
+    - All RNG states restore and incompatible configs are refused
+design:
+  fixed_factors: [config.json and docs/source_boundary.md]
+  tunable_factors: []
+  nuisance_factors: [software versions, kernel nondeterminism, unknown paper seed]
+  randomization: Fixed seed 20170922 before test metrics
+  blocking: Separate ERM and Mixup directories
+  blinding: Not applicable to engineering preflight
+  leakage_protection: [no test-driven tuning, no best-checkpoint primary endpoint]
+  missingness_or_attrition_plan: Missing runs remain NOT_EXECUTED
+  analysis_linkage: outputs/paper_comparison.csv uses complete final runs only
+baseline_control_ablation:
+  baseline_ids: [ERM]
+  control_ids: [matched pipeline]
+  ablation_plan_id: null
+  comparator_fairness_checks:
+    - Same architecture and optimizer and data pipeline
+    - Same fixed seed and epoch budget
+mode_details:
+  computational_ai:
+    dataset_split_or_evaluation_boundary: Official 50000 train and 10000 test
+    tuning_budget_rule: No tuning
+    seed_and_nondeterminism_plan: Seed 20170922; save all RNG; cudnn benchmark retained and nondeterminism disclosed
+data_materials_and_provenance:
+  input_locators: [references/1710.09412v2.pdf, references/official-mixup-cifar10, data]
+  data_or_material_versions: [official eaff31ab397a90fbc0a4aac71fb5311144b3608b]
+  chain_of_custody_or_lineage: [dataset_provenance.json per run]
+  sensitive_or_restricted_items: []
+simulation:
+  usage: TEST_ONLY
+  label: TEST_ONLY_SIMULATION
+  purpose: Random tensor unit tests only; quick training uses actual CIFAR10
+  result_claim_allowed: false
+authorization:
+  user_confirmation_required: false
+  confirmation_status: USER_CONFIRMED
+  confirmation_locator: User pasted request sections 13-16 and final instruction
+  approved_limits: [setup and audit and capped 2-epoch quick tests only]
+deviations: [documented in source_boundary.md and assumptions.md]
+author_input_needed: [formal execution confirmation after preflight passes]
+quality_checks: [tests/validate.py]

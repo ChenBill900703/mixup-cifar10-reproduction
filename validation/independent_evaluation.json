@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-10-06T09:02:40.676128+00:00",
+  "methods": {
+    "ERM": {
+      "status": "PASS",
+      "test_count": 10000,
+      "correct": 9440,
+      "incorrect": 560,
+      "test_accuracy": 94.4,
+      "test_error": 5.6,
+      "matches_epoch200_summary": true,
+      "final_weights_sha256": "5f06936f6a17a8012975d0d6a5e5e0c59777ed50b0e692bd846ff5889b917c85",
+      "dataset_integrity": "torchvision CIFAR10 official per-file MD5 PASS"
+    },
+    "Mixup": {
+      "status": "PASS",
+      "test_count": 10000,
+      "correct": 9573,
+      "incorrect": 427,
+      "test_accuracy": 95.73,
+      "test_error": 4.27,
+      "matches_epoch200_summary": true,
+      "final_weights_sha256": "659138f041dc043d27810d2b71106f36c09e9f2fb017da927c11aa983aff1fc3",
+      "dataset_integrity": "torchvision CIFAR10 official per-file MD5 PASS"
+    }
+  },
+  "completed_utc": "2026-10-06T09:02:48.823759+00:00"
+}

@@ -1,0 +1,45 @@
+schema_version: "1.0"
+contract_version: "2.0"
+ledger_id: preflight-integrity
+experiment_plan_id: mixup-cifar10-preflight
+status: VERIFIED
+entries:
+  - result_id: engineering-preflight
+    claim_scope: Engineering execution and resume only
+    result_type: DIAGNOSTIC
+    source_type: OBSERVED_RUN
+    evidence_label: EXECUTED_LOCAL
+    plan_id: mixup-cifar10-preflight
+    run_ids: [20261006T034926]
+    source_locators: [validation/20261006T034926]
+    input_locators: [config.json, data, models/official_resnet.py]
+    output_locators: [outputs/quick/20261006T034926]
+    metric_or_measurement_definition: Capped quick test and state restoration checks
+    value_locator: validation/readiness.json
+    transformations: []
+    uncertainty_or_variability: cuDNN kernel nondeterminism remains
+    deviations: [workers=0 after documented WinError1455]
+    verification_status: VERIFIED
+    publication_claim_allowed: false
+    restriction_reason: Quick tests cannot support reproduction accuracy claims
+  - result_id: formal-paper-comparison
+    claim_scope: Epoch200 ERM and Mixup final errors
+    result_type: PRIMARY
+    source_type: NOT_AVAILABLE
+    evidence_label: NOT_EXECUTED
+    plan_id: mixup-cifar10-preflight
+    run_ids: []
+    source_locators: []
+    input_locators: [docs/reproduction_spec.md]
+    output_locators: [outputs/paper_comparison.csv]
+    metric_or_measurement_definition: Final full-test error minus paper Figure3 error in percentage points
+    value_locator: null
+    transformations: []
+    uncertainty_or_variability: Unknown until executed; single seed does not estimate seed variation
+    deviations: []
+    verification_status: PENDING
+    publication_claim_allowed: false
+    restriction_reason: Formal run awaits explicit user approval
+conflicts: []
+missing_evidence: [formal training results]
+verified_by_orchestrator: false

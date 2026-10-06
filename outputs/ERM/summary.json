@@ -1,0 +1,31 @@
+{
+  "method": "ERM",
+  "seed": 20170922,
+  "final_epoch": 200,
+  "status": "COMPLETE",
+  "result_claim_allowed": true,
+  "final_test_accuracy": 94.4,
+  "final_test_error": 5.599999999999994,
+  "best_test_accuracy": 94.57,
+  "best_test_error": 5.430000000000007,
+  "best_epoch": 148,
+  "paper_test_error": 5.6,
+  "difference_final_minus_paper": -5.329070518200751e-15,
+  "training_seconds": 5891.162880198215,
+  "gpu": "NVIDIA GeForce RTX 3070 Ti",
+  "official_source_revision": "eaff31ab397a90fbc0a4aac71fb5311144b3608b",
+  "source_hashes": {
+    "train.py": "c46ba28a7c07ee87dc3ab037850358d50169587c4e28d0ffcfedd98acb25aeee",
+    "config.json": "3480533ecb5f40122a5ae93f53d8a9f383310fad4cfff486b3b3a1a8b9bf8bb1",
+    "models/__init__.py": "4c99a9d504e82bb99a025f66ebc9998ba152639be95d0ebdf64d8b0b83cf6721",
+    "models/official_resnet.py": "e6db68ae22955142b5921b60e3a9b04bb8001dbf1453b03d90f4d1ec16d17f12",
+    "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/data.py": "f58e8ed04192289ebaab2ee5d252bb39a7dc40cddd9197509aa2d423d196e610",
+    "utils/report.py": "dbf20a0507d4a9409e21e093bf0c4114574e8c7f1d1eb5219a876adb91b4393f",
+    "utils/state.py": "2dc23fa8f49870602b520bc9b6f19546c727285aefadd51d975ca8908c77651e",
+    "tests/test_invariants.py": "c8e3fa409f26f3691476ec08ae4fc7ad73e3b8c44ec8c8a565a503629ba46d1e",
+    "tests/validate.py": "d27a07fd5ad3cd6ec95d2b04df979e845a27932f20337f56c4ea72d0265e0e66"
+  },
+  "primary_metric": "epoch_200_final_test_error",
+  "paper_metric_caveat": "Figure 3(a) does not explicitly identify final vs best; Table 5 uses last-10 median."
+}

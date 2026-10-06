@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\train.py", line 285, in <module>
+    main()
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\train.py", line 279, in main
+    run_method(base, method, args)
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\train.py", line 159, in run_method
+    validate_resume(cp, c, env)
+  File "E:\mixup BEYOND EMPIRICAL RISK MINIMIZATION\mixup-reproduction\utils\state.py", line 102, in validate_resume
+    raise ValueError('REFUSING RESUME: config mismatch: ' + ', '.join(keys))
+ValueError: REFUSING RESUME: config mismatch: seed

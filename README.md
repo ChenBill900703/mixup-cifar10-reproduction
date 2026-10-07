@@ -31,7 +31,7 @@ Mixup 希望透過樣本之間的線性插值增加 regularization，鼓勵模�
 從訓練資料取得兩筆樣本 $(x_i,y_i)$ 與 $(x_j,y_j)$，其中分類標籤以 one-hot 向量表示，使用同一個比例建立 convex combination：
 
 $$
-\lambda \sim \operatorname{Beta}(\alpha,\alpha), \qquad \alpha > 0
+\lambda \sim \mathrm{Beta}(\alpha,\alpha), \qquad \alpha > 0
 $$
 
 $$
@@ -55,7 +55,7 @@ $$
 - 以兩個 cross-entropy 的 λ 加權實作混合標籤 loss：
 
 $$
-L=\lambda\,\operatorname{CE}(f(\tilde{x}),y_i)+(1-\lambda)\,\operatorname{CE}(f(\tilde{x}),y_j)
+L=\lambda\,\mathrm{CE}(f(\tilde{x}),y_i)+(1-\lambda)\,\mathrm{CE}(f(\tilde{x}),y_j)
 $$
 
 這與對混合的 soft label 計算 cross-entropy 等價。同批 shuffle 也在論文第 2 節討論；每批抽樣的具體程式路徑與兩個 CE 的寫法則由官方程式核對，不將所有實作細節當成論文逐項明定的設定。詳見[來源對照](docs/source_boundary.md)。
